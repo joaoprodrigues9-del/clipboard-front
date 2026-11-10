@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 28px 40px 29px;
+    height: 90vh;
+    background-image: url(Mobile-imgs/fundo-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+}
+
+@media (min-width: 1300px) {
+
+    .text-preset1 {
+        font-size: 46px;
+        line-height: 125%;
+        letter-spacing: -0.75px;
+        font-weight: 600;
+    }
+
+    .text-preset3 {
+        font-size: 36px;
+        line-height: 125%;
+        letter-spacing: -0.6px;
+        font-weight: 600;
+    }
+
+    .text-preset6 {
+        font-size: 24px;
+        line-height: 125%;
+        letter-spacing: -0.4px;
+        font-weight: 600;
+    }
+
+    .text-preset7-semibold {
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+    }
+
+
+    .text-preset7-regular {
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.75px;
+        font-weight: 400;
+    }
+
+    .text-preset8 {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.15px;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1299px) {
+
+    .text-preset2 {
+        font-size: 40px;
+        line-height: 125%;
+        letter-spacing: -0.75px;
+        font-weight: 600;
+    }
+
+    .text-preset3 {
+        font-size: 36px;
+        line-height: 125%;
+        letter-spacing: -0.6px;
+        font-weight: 600;
+    }
+
+    .text-preset7-semibold {
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+    }
+
+
+    .text-preset7-regular {
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.75px;
+        font-weight: 400;
+    }
+
+    .text-preset8 {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.15px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width:500px) {
+
+    .text-preset4 {
+        font-size: 32px;
+        line-height: 125%;
+        letter-spacing: -0.5px;
+        font-weight: 600;
+    }
+
+    .text-preset5 {
+        font-size: 28px;
+        line-height: 125%;
+        letter-spacing: -0.75px;
+        font-weight: 600;
+    }
+
+    .text-preset6 {
+        font-size: 24px;
+        line-height: 125%;
+        letter-spacing: -0.4px;
+        font-weight: 600;
+    }
+
+    .text-preset7-semibold {
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+    }
+
+    .text-preset7-regular {
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.75px;
+        font-weight: 400;
+    }
+
+    .text-preset8 {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.15px;
+        font-weight: 400;
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-top: 64px;
+}
+
+p {
+    text-align: center;
+    margin-top: 16px;
+    color: #9EABB2;
+}
+
+.IOS {
+    width: 318px;
+    height: 56px;
+    background-color: #26BBA4;
+    border-radius: 28px;
+    font-family: "Bai Jamjuree", sans-serif;
+    color: white;
+    margin-top: 56px;
+}
+
+.IOS:hover {
+    background-color: #5DCCBB;
+}
+
+.Mac {
+    width: 318px;
+    height: 56px;
+    background-color: #6174FF;
+    border-radius: 28px;
+    font-family: "Bai Jamjuree", sans-serif;
+    color: white;
+    margin-top: 24px;
+}
+
+.Mac:hover {
+    background-color: #8897FF;
+}
+
+section{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 28px 40px 29px;
+    height: 90vh;
+}
