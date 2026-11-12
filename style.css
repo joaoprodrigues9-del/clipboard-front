@@ -70,7 +70,6 @@ main {
 }
 
 @media (min-width: 500px) and (max-width: 1299px) {
-
     .text-preset2 {
         font-size: 40px;
         line-height: 125%;
@@ -192,8 +191,8 @@ p {
     background-color: #8897FF;
 }
 
-section{
-     display: flex;
+section {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
