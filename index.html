@@ -2,50 +2,234 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clipboard</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="tipografia.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Clipboard - Página Inicial</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-    <main>
-        <img src="Mobile-imgs/logo-mobile.png" alt="Logo">
-        <h1 class="text-preset1 text-preset2 text-preset4">A history of everything you copy</h1>
-        <p class="text-preset7-regular text-preset8">Clipboard allows you to track and organize everything you copy.
-            Instantly access your clipboard on all yourdevices.</p>
-        <button class="IOS text-preset7-semibold">Download for IOS</button>
-        <button class="Mac text-preset7-semibold">Download for Mac</button>
-    </main>
-    <section>
-            <h2>Keep track of your snippets</h2>
-            <p>Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets
-                immediately
-                on all your devices. Our Mac and iOS apps will help you organize everything. </p>
 
-            <picture>
-                <source srcset="tablet-imgs/tablet-img1.png" media="(min-width: 501px) and (max-width: 1299px)"
-                    type="image/webp">
-                <source srcset="desktop-imgs/desktop-img1.png" media="(min-width: 1300px)" type="image/webp">
-                <source srcset="Mobile-imgs/img1-mobile.png" media="(max-width: 500px)" type="image/webp">
-                <img src="desktop-imgs/fundo-desktop.png" alt="">
+  <section class="apresentacao">
+
+    <img src="Mobile-imgs/logo-mobile.png" alt="Logo do Clipboard" class="logo">
+
+    <div class="conteudo">
+
+      <h1>A history of everything you copy</h1>
+
+      <p>
+        Clipboard allows you to track and organize everything you copy.
+        Instantly access your clipboard on all your devices.
+      </p>
+
+      <div class="botoes">
+        <a href="#" class="botao-ios">Download for iOS</a>
+        <a href="#" class="botao-mac">Download for Mac</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <main>
+
+    <section class="trechos">
+
+      <div class="introducao-trechos">
+
+        <h2>Keep track of your snippets</h2>
+
+        <p>
+          Clipboard instantly stores any item you copy in the cloud, meaning you can
+          access your snippets immediately on all your devices. Our Mac and iOS apps
+          will help you organize everything.
+        </p>
+
+      </div>
+
+      <div class="imagem-computador">
+
+        <picture>
+          <source media="(max-width: 500px)" src="Mobile-imgs/img1-mobile.png">
+          <source media="(min-width: 501px) and (max width: 1033px)" src="tablet-imgs/tablet-img1.png">
+          <source media="(min-width: 1034px)" src="desktop-imgs/desktop-img1.png">
+          <img src="desktop-imgs/desktop-img1.png" alt="Computador exibindo o Clipboard">
         </picture>
-        <h2>Quick Search</h2>
-        <p>Easily search your snippets by content, category, web address, application, and more.</p>
-        <h2>iCloud Sync</h2>
-        <p>Instantly saves and syncs snippets across all your devices.</p>
-        <h2>Complete History</h2>
-        <p>Retrieve any snippets from the first moment you started using the app.</p>
+
+      </div>
+
+      <div class="recursos">
+
+        <article class="recurso">
+          <h3>Quick Search</h3>
+          <p>
+            Easily search your snippets by content, category, web address,
+            application, and more.
+          </p>
+        </article>
+
+        <article class="recurso">
+          <h3>iCloud Sync</h3>
+          <p>
+            Instantly saves and syncs snippets across all your devices.
+          </p>
+        </article>
+
+        <article class="recurso">
+          <h3>Complete History</h3>
+          <p>
+            Retrieve any snippets from the first moment you started using the app.
+          </p>
+        </article>
+
+      </div>
+
     </section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
+
+    <section class="acesso">
+
+      <div class="introducao-acesso">
+
+        <h2>Access Clipboard Anywhere</h2>
+
+        <p>
+          Whether you're on the go, or at your computer, you can access all your
+          Clipboard snippets in a few simple clicks.
+        </p>
+
+      </div>
+
+      <div class="imagem-acesso">
+
+        <picture>
+          <source media="(max-width: 767px)" src="tablet-imgs/tablet-img2.png">
+          <img src="desktop-imgs/desktop-img2.png" alt="Clipboard em diferentes dispositivos">
+        </picture>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <section class="produtividade">
+
+    <div class="introducao-produtividade">
+
+      <h2>Supercharge your workflow</h2>
+      <p>We've got the tools to boost your productivity.</p>
+
+    </div>
+
+    <div class="recursos-produtividade">
+
+      <article class="item-produtividade">
+
+        <img src="Mobile-imgs/list-icon-mobile.png" alt="">
+
+        <h3>Create blacklists</h3>
+
+        <p>
+          Ensure sensitive information never makes its way to your clipboard by
+          excluding certain sources.
+        </p>
+
+      </article>
+
+      <article class="item-produtividade">
+
+        <img src="Mobile-imgs/a-icon-mobile.png" alt="">
+
+        <h3>Plain text snippets</h3>
+
+        <p>
+          Remove unwanted formatting from copied text for a consistent look.
+        </p>
+
+      </article>
+
+      <article class="item-produtividade">
+
+        <img src="Mobile-imgs/olho-icon-mobile.png" alt="">
+
+        <h3>Sneak preview</h3>
+
+        <p>
+          Quick preview of all snippets on your Clipboard for easy access.
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+  <section class="parceiros">
+
+    <img src="Mobile-imgs/google-mobile.png" alt="Google">
+    <img src="Mobile-imgs/ibm-mobile.png" alt="IBM">
+    <img src="Mobile-imgs/microsoft-mobile.png" alt="Microsoft">
+    <img src="Mobile-imgs/hewlett-mobile.png" alt="Vector Graphics">
+    <img src="Mobile-imgs/vectorgraphics-mobile.png" alt="Hewlett Packard Enterprise">
+
+  </section>
+
+  <section class="download">
+
+    <h2>Clipboard for iOS <br> and Mac OS</h2>
+
+    <p>
+      Available for free on the App Store. Download for Mac or iOS, sync with
+      iCloud and you're ready to start adding to your clipboard.
+    </p>
+
+    <div class="botoes">
+      <a href="#" class="botao-ios">Download for iOS</a>
+      <a href="#" class="botao-mac">Download for Mac</a>
+    </div>
+
+  </section>
+
+  <footer class="rodape">
+
+    <img class="logo-rodape" src="Mobile-imgs/logo-footer-mobile.png" alt="Logo do Clipboard">
+
+    <nav class="links-rodape">
+      <a href="#">FAQs</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Press Kit</a>
+      <a href="#">Install Guide</a>
+    </nav>
+
+    <div class="redes-sociais">
+
+      <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <i class="fa-brands fa-square-facebook"></i>
+      </a>
+
+      <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+
+      <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+    </div>
+
+  </footer>
+
 </body>
 
 </html>

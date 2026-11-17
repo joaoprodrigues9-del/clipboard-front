@@ -1,201 +1,641 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    margin: auto;
     font-family: "Bai Jamjuree", sans-serif;
-}
-
-main {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    padding: 40px 28px 40px 29px;
-    height: 90vh;
-    background-image: url(Mobile-imgs/fundo-mobile.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-
-}
-
-@media (min-width: 1300px) {
-
-    .text-preset1 {
-        font-size: 46px;
-        line-height: 125%;
-        letter-spacing: -0.75px;
-        font-weight: 600;
-    }
-
-    .text-preset3 {
-        font-size: 36px;
-        line-height: 125%;
-        letter-spacing: -0.6px;
-        font-weight: 600;
-    }
-
-    .text-preset6 {
-        font-size: 24px;
-        line-height: 125%;
-        letter-spacing: -0.4px;
-        font-weight: 600;
-    }
-
-    .text-preset7-semibold {
-        font-size: 20px;
-        line-height: 150%;
-        letter-spacing: 0.5px;
-        font-weight: 600;
-    }
-
-
-    .text-preset7-regular {
-        font-size: 20px;
-        line-height: 150%;
-        letter-spacing: 0.75px;
-        font-weight: 400;
-    }
-
-    .text-preset8 {
-        font-size: 16px;
-        line-height: 150%;
-        letter-spacing: 0.15px;
-        font-weight: 400;
-    }
-}
-
-@media (min-width: 500px) and (max-width: 1299px) {
-    .text-preset2 {
-        font-size: 40px;
-        line-height: 125%;
-        letter-spacing: -0.75px;
-        font-weight: 600;
-    }
-
-    .text-preset3 {
-        font-size: 36px;
-        line-height: 125%;
-        letter-spacing: -0.6px;
-        font-weight: 600;
-    }
-
-    .text-preset7-semibold {
-        font-size: 20px;
-        line-height: 150%;
-        letter-spacing: 0.5px;
-        font-weight: 600;
-    }
-
-
-    .text-preset7-regular {
-        font-size: 20px;
-        line-height: 150%;
-        letter-spacing: 0.75px;
-        font-weight: 400;
-    }
-
-    .text-preset8 {
-        font-size: 16px;
-        line-height: 150%;
-        letter-spacing: 0.15px;
-        font-weight: 400;
-    }
-}
-
-@media (max-width:500px) {
-
-    .text-preset4 {
-        font-size: 32px;
-        line-height: 125%;
-        letter-spacing: -0.5px;
-        font-weight: 600;
-    }
-
-    .text-preset5 {
-        font-size: 28px;
-        line-height: 125%;
-        letter-spacing: -0.75px;
-        font-weight: 600;
-    }
-
-    .text-preset6 {
-        font-size: 24px;
-        line-height: 125%;
-        letter-spacing: -0.4px;
-        font-weight: 600;
-    }
-
-    .text-preset7-semibold {
-        font-size: 20px;
-        line-height: 150%;
-        letter-spacing: 0.5px;
-        font-weight: 600;
-    }
-
-    .text-preset7-regular {
-        font-size: 20px;
-        line-height: 150%;
-        letter-spacing: 0.75px;
-        font-weight: 400;
-    }
-
-    .text-preset8 {
-        font-size: 16px;
-        line-height: 150%;
-        letter-spacing: 0.15px;
-        font-weight: 400;
-    }
-}
-
-h1 {
-    text-align: center;
-    margin-top: 64px;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: #4C545C;
+    background-color: #FFFFFF;
 }
 
 p {
-    text-align: center;
-    margin-top: 16px;
     color: #9EABB2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.15px;
 }
 
-.IOS {
-    width: 318px;
-    height: 56px;
-    background-color: #26BBA4;
-    border-radius: 28px;
-    font-family: "Bai Jamjuree", sans-serif;
-    color: white;
-    margin-top: 56px;
+a {
+    text-decoration: none;
 }
 
-.IOS:hover {
-    background-color: #5DCCBB;
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url("Mobile-imgs/fundo-main-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.Mac {
-    width: 318px;
-    height: 56px;
-    background-color: #6174FF;
-    border-radius: 28px;
-    font-family: "Bai Jamjuree", sans-serif;
-    color: white;
-    margin-top: 24px;
+.logo {
+    width: 125px;
+    max-width: 50%;
 }
 
-.Mac:hover {
-    background-color: #8897FF;
+.conteudo {
+    width: 100%;
+    text-align: center;
 }
 
-section {
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: -0.5px;
+    color: #4C545C;
+    margin-bottom: 16px;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-ios,
+.botao-mac {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: 40px 28px 40px 29px;
-    height: 90vh;
+    height: 56px;
+    border-radius: 999px;
+    color: #FFFFFF;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.2s;
 }
+
+.botao-ios {
+    background-color: #26BBA4;
+}
+
+.botao-mac {
+    background-color: #6174FF;
+}
+
+.botao-ios:hover {
+    background-color: #5DCCB8;
+}
+
+.botao-mac:hover {
+    background-color: #8897FF;
+}
+
+.trechos {
+    width: 100%;
+    text-align: center;
+}
+
+.introducao-trechos,
+.introducao-acesso,
+.introducao-produtividade {
+    text-align: center;
+}
+
+.trechos h2,
+.acesso h2,
+.produtividade h2,
+.download h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: -0.4px;
+    color: #4C545C;
+    margin-bottom: 16px;
+}
+
+.imagem-computador img,
+.imagem-acesso img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.recursos {
+    display: flex;
+    text-align: center;
+}
+
+.recurso h3,
+.item-produtividade h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #4C545C;
+    margin-bottom: 12px;
+}
+
+.recurso p,
+.item-produtividade p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #9EABB2;
+}
+
+.acesso {
+    width: 100%;
+    text-align: center;
+}
+
+.imagem-acesso {
+    width: 100%;
+}
+
+.produtividade {
+    width: 100%;
+    text-align: center;
+}
+
+.recursos-produtividade {
+    display: flex;
+}
+
+.item-produtividade img {
+    display: block;
+    height: 40px;
+    width: auto;
+    margin: 0 auto 28px;
+}
+
+.parceiros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parceiros img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.download {
+    width: 100%;
+    text-align: center;
+}
+
+.download p {
+    color: #9EABB2;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    background-color: #F5F7F7;
+    width: 100%;
+}
+
+.logo-rodape {
+    width: 50px;
+    height: auto;
+}
+
+.links-rodape {
+    display: flex;
+}
+
+.links-rodape a {
+    color: #4C545C;
+    transition: color 0.2s;
+}
+
+.links-rodape a:hover {
+    color: #26BBA4;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.redes-sociais i {
+    font-size: 24px;
+    color: #4C545C;
+    transition: color 0.2s;
+}
+
+.redes-sociais i:hover {
+    color: #26BBA4;
+}
+
+@media screen and (max-width: 500px) {
+
+    .apresentacao {
+        min-height: 200px;
+    }
+
+    .logo {
+        margin-top: 80px;
+    }
+
+    .conteudo {
+        padding: 20px 28px 32px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: 36px;
+    }
+
+    .botoes {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .botao-ios,
+    .botao-mac {
+        width: 100%;
+        max-width: 227px;
+    }
+
+    .introducao-trechos,
+    .introducao-acesso,
+    .introducao-produtividade {
+        padding: 48px 28px 0;
+    }
+
+    .trechos h2,
+    .acesso h2,
+    .produtividade h2,
+    .download h2 {
+        font-size: 24px;
+    }
+
+    .introducao-trechos p,
+    .introducao-acesso p {
+        margin-bottom: 0;
+    }
+
+    .imagem-computador {
+        margin: 40px 0 32px;
+        padding: 0 10px;
+    }
+
+    .recursos {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 28px 48px;
+    }
+
+    .recurso h3,
+    .item-produtividade h3 {
+        font-size: 20px;
+    }
+
+    .recurso p,
+    .item-produtividade p {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .imagem-acesso {
+        margin: 40px 0 16px;
+        padding: 0 10px;
+    }
+
+    .recursos-produtividade {
+        flex-direction: column;
+        gap: 40px;
+        padding: 48px 28px 0;
+    }
+
+    .parceiros {
+        flex-direction: column;
+        gap: 48px;
+        padding: 48px 28px;
+    }
+
+    .parceiros img {
+        max-width: 160px;
+    }
+
+    .download {
+        padding: 48px 28px;
+    }
+
+    .download p {
+        font-size: 14px;
+        margin-bottom: 36px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        gap: 32px;
+        padding: 48px 28px;
+    }
+
+    .links-rodape {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .links-rodape a {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (min-width: 501px) and (max-width: 1033px) {
+
+    .apresentacao {
+        min-height: 300px;
+    }
+
+    .logo {
+        width: 150px;
+        margin-top: 40px;
+    }
+
+    .conteudo {
+        max-width: 750px;
+        padding: 35px 40px 50px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .conteudo p {
+        font-size: 16px;
+    }
+
+    .botoes {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .botao-ios,
+    .botao-mac {
+        width: 220px;
+    }
+
+    .introducao-trechos,
+    .introducao-acesso,
+    .introducao-produtividade {
+        padding: 64px 70px 0;
+    }
+
+    .trechos h2,
+    .acesso h2,
+    .produtividade h2,
+    .download h2 {
+        font-size: 24px;
+    }
+
+    .imagem-computador {
+        max-width: 650px;
+        margin: 50px auto;
+    }
+
+    .recursos {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 45px 60px;
+    }
+
+    .recurso {
+        flex: 1;
+        max-width: 250px;
+    }
+
+    .imagem-acesso {
+        max-width: 750px;
+        margin: 50px auto;
+    }
+
+    .recursos-produtividade {
+        flex-direction: row;
+        justify-content: center;
+        gap: 32px;
+        padding: 64px 45px 0;
+    }
+
+    .item-produtividade {
+        flex: 1;
+        max-width: 250px;
+    }
+
+    .parceiros {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 45px;
+        padding: 70px 40px;
+    }
+
+    .parceiros img {
+        max-width: 120px;
+    }
+
+    .download {
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 64px 50px;
+    }
+
+    .rodape {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 25px;
+        padding: 40px 30px;
+    }
+
+    .links-rodape {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1034px) {
+
+    .apresentacao {
+        min-height: 400px;
+        padding-top: 50px;
+    }
+
+    .logo {
+        width: 130px;
+        margin-top: 0;
+    }
+
+    .conteudo {
+        max-width: 850px;
+        padding: 25px 30px 50px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .conteudo p {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .botoes {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .botao-ios,
+    .botao-mac {
+        width: 180px;
+        height: 56px;
+    }
+
+    .trechos {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-areas:
+            "introducao introducao"
+            "imagem recursos";
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 30px;
+        text-align: center;
+    }
+
+    .introducao-trechos {
+        grid-area: introducao;
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 30px 20px 50px;
+    }
+
+    .introducao-trechos p {
+        font-size: 16px;
+    }
+
+    .imagem-computador {
+        grid-area: imagem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .imagem-computador img {
+        width: 100%;
+    }
+
+    .recursos {
+        grid-area: recursos;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 20px 30px;
+        text-align: left;
+    }
+
+    .recurso {
+        max-width: 350px;
+    }
+
+    .recurso h3 {
+        font-size: 20px;
+    }
+
+    .recurso p {
+        font-size: 16px;
+    }
+
+    .introducao-acesso {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 72px 30px 0;
+    }
+
+    .imagem-acesso {
+        max-width: 850px;
+        margin: 40px auto 70px;
+    }
+
+    .introducao-produtividade {
+        padding: 30px 20px;
+    }
+
+    .recursos-produtividade {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 30px 40px;
+    }
+
+    .item-produtividade {
+        flex: 1;
+        max-width: 320px;
+    }
+
+    .item-produtividade p {
+        font-size: 16px;
+    }
+
+    .parceiros {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 55px;
+        padding: 70px 30px;
+    }
+
+    .parceiros img {
+        width: 120px;
+        max-width: 120px;
+    }
+
+    .download {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 64px 30px 72px;
+    }
+
+    .download p {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+        padding: 35px 8%;
+    }
+
+    .links-rodape {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+}
+
