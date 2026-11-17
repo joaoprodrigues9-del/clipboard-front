@@ -33,7 +33,7 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: url("Mobile-imgs/fundo-main-mobile.png");
+    background-image: url("desktop-imgs/fundo-main.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -122,7 +122,6 @@ h1 {
     width: 100%;
     height: auto;
 }
-
 .recursos {
     display: flex;
     text-align: center;
@@ -181,6 +180,7 @@ h1 {
     display: block;
     width: 100%;
     height: auto;
+    margin: 20px;
 }
 
 .download {
